@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input[type="text"], form input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+li span {
+    flex: 1;
+    cursor: pointer;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li .date, li .due-date {
+    font-size: 0.8em;
+    color: #888;
+    margin-left: 10px;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+li button.edit {
+    color: #007bff;
+}
+
+li button.delete {
+    color: #dc3545;
+}
+
+li button.save {
+    color: #28a745;
+}
+
+li button.cancel {
+    color: #ffc107;
+}
